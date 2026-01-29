@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cdps-27
+  labels:
+    team: "27"
+    project: practica-creativa-2

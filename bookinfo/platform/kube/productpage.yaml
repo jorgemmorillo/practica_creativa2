@@ -8,8 +8,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 9080
-    targetPort: 9080
+    - port: 9080
+      targetPort: 9080
   selector:
     app: productpage
 ---
@@ -30,11 +30,13 @@ spec:
       labels:
         app: productpage
     spec:
-     - name: productpage
-       image: jorgemoreno1/productpage:g27
-       imagePullPolicy: IfNotPresent
-       ports:
-       - containerPort: 9080
-       command: ["python", "productpage.py"]
-       args: ["9080"]
+      containers:
+        - name: productpage
+          image: jorgemoreno1/productpage:g27
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9080
+          args:
+            - "9080"
+
 

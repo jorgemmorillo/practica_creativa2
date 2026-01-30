@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: productpage
-        image: jormorno/productpage:g27
+        image: jorgemoreno1/productpage:g27
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080

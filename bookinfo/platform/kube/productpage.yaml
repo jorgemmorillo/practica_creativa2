@@ -36,5 +36,8 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
+        command: ["python", "productpage.py"]
+        args: ["9080"]
+
 
 

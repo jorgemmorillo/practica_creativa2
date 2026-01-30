@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: reviews
-        image: jormorno/reviews-v2:g27
+        image: jorgemoreno1/reviews-v2:g27
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR

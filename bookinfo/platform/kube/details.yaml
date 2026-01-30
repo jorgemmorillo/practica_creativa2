@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: details
-        image: 27/details
+        image: gcr.io/pcreativa2-485818/details
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080

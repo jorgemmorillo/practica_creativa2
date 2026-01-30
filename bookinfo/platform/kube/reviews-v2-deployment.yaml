@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: reviews
-        image: gcr.io/pcreativa2-485818/reviews-v2:g27
+        image: jormorno/reviews-v2:g27
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR

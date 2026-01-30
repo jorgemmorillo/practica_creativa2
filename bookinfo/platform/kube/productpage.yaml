@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: productpage
-        image: 27/productpage
+        image: gcr.io/pcreativa2-485818/productpage
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080

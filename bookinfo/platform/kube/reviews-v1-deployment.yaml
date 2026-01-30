@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: reviews
-        image: 27/reviews-v1
+        image: gcr.io/pcreativa2-485818/reviews-v1
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR

@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-DOCKERHUB_USER = "jorgemoreno1"
+DOCKERHUB_USER = "jormorno"
 TAG = "g27"
 
 IMAGES = [

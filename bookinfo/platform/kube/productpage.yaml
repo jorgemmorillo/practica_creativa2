@@ -30,12 +30,11 @@ spec:
       labels:
         app: productpage
     spec:
-      containers:
-      - name: productpage
-        image: jorgemoreno1/productpage:g27
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 9080
-        args:
-        - "9080"
+     - name: productpage
+       image: jorgemoreno1/productpage:g27
+       imagePullPolicy: IfNotPresent
+       ports:
+       - containerPort: 9080
+       command: ["python", "productpage.py"]
+       args: ["9080"]
 
